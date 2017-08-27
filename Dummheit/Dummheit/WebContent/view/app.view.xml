@@ -1,0 +1,51 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m" controllerName="sap.myApp.controller.app" xmlns:html="http://www.w3.org/1999/xhtml">
+
+
+	<App>
+		<pages>
+			<Page title="Ueberschrift">
+				<content>
+					<IconTabBar id="idIconTabBar">
+						<items>
+							<IconTabFilter id="idTab1" text="IconTabFilter1">
+
+								<Image 
+									src="https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688" />
+								<Input value="{Cars>/Car/CarModel}" description="Hello {Cars>/Car/CarModel}"
+									valueLiveUpdate="true" width="50%" />
+
+								<Button text="{i18n>Click}" press="onClick" icon="sap-icon://play" />
+								<Button text="goTo view 2" press="onGo" />
+								</IconTabFilter>
+
+
+
+								 <IconTabFilter id="idTab2" text="IconTabFilter2">
+								  <f:SimpleForm id="idsimpleFormChange" title="Adress">
+								 	<f:content>
+										<Label text="{i18n>Name}"/>
+										<Input value="{adress>/Name}"/>							 	
+								 	</f:content>
+								 
+								 
+								 </f:SimpleForm>
+						 
+
+								</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+
+
+
+
+
+
+
+
+
+</mvc:View>
